@@ -1,6 +1,6 @@
 # Hero Database
 
-This project has been deployed:
+This project has been deployed: https://shaqs-superhero-database.surge.sh/
 
 ## Project
 
