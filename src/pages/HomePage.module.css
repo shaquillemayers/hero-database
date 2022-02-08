@@ -1,0 +1,17 @@
+.homepage {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.homepage h1 {
+  font-size: 5rem;
+}
+
+a.link {
+  color: #a78eb6;
+  text-decoration: none;
+}
+
+a.link:hover {
+  color: white;
+}
