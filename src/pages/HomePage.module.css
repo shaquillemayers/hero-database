@@ -8,10 +8,16 @@
 }
 
 a.link {
-  color: #a78eb6;
+  color: #a54e4e;
   text-decoration: none;
 }
 
 a.link:hover {
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage h1 {
+    font-size: 4rem;
+  }
 }

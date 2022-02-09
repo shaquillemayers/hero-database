@@ -11,9 +11,9 @@
 }
 
 .logo {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 2rem;
-  color: #f9f9f9;;
+  color: #f9f9f9;
   margin: 0;
 }
 
@@ -28,12 +28,12 @@
 .header li {
   margin: 0 1rem;
   transform: 0;
-  -webkit-transform:translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .header a {
   text-decoration: none;
-  color: #f9f9f9;;
+  color: #f9f9f9;
   font-weight: bold;
 }
 
@@ -41,7 +41,7 @@
   font: inherit;
   background-color: transparent;
   border: 1px solid #f9f9f9;
-  color: #f9f9f9;;
+  color: #f9f9f9;
   font-weight: bold;
   padding: 0.5rem 1.5rem;
   border-radius: 6px;
@@ -66,7 +66,7 @@
 }
 
 .header-link:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -83,4 +83,8 @@
   transform-origin: bottom left;
 }
 
-
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+}
