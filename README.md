@@ -10,4 +10,4 @@ For this project, I accessed the the Superhero API: https://superheroapi.com/
 
 ## Future adjustments
 
-In future, I will be improving the css styling, as well as ensuring users can search by place of birth and age also.
+In future, I will be improving the css styling, as well as ensuring users can search by real name, place of birth and age also.
