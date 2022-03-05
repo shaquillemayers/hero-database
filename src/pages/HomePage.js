@@ -11,12 +11,11 @@ const HomePage = () => {
     <section className={classes.homepage}>
       <h1>Welcome!</h1>
       <p>
-        This is the superhero database. Search the name of any superheroes or
-        villains of your choosing to find out various information about the
-        characters.
+        This is the superhero database. Search the name of any superhero or
+        villain to find out various information about the character.
       </p>
       <p>
-        To access the database, please{" "}
+        To access the database{" "}
         <Link to="/search" className={classes.link}>
           click here.
         </Link>{" "}
