@@ -37,6 +37,7 @@ const HeroForm = () => {
       try {
         // reset state
         resetUserData();
+        setIsLoading(true);
 
         // fetch based on entered Hero name
         const response = await fetch(
