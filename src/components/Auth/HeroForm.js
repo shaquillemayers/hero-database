@@ -112,7 +112,7 @@ const HeroForm = () => {
                       onError={({ currentTarget }) => {
                         currentTarget.onerror = null; // prevents looping
                         currentTarget.src = "no-superhero.png";
-                        currentTarget.innerHTML = "Test";
+                        currentTarget.innerHTML = "";
                       }}
                     />
 
