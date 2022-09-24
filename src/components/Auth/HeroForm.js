@@ -50,8 +50,8 @@ const HeroForm = () => {
         // Handle unsuccessful response
         if (!response.ok) {
           setIsLoading(false);
-          setError(error); // Does this code do anything yet?
-          // throw new Error('Something went wrong!');
+          setError("Oops! There was a problem fetching this info");
+          throw new Error("Something went wrong fetching this information");
         } else {
           setIsLoading(false);
         }

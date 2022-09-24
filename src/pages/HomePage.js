@@ -21,6 +21,11 @@ const HomePage = () => {
         </Link>{" "}
         Enjoy!
       </p>
+      <p>
+        <span>Notice:</span> Unfortunately, the superhero API is currently down,
+        rendering this project useless for the time being. However, I'll be
+        working on allowing this project to work with a similar API soon.
+      </p>
     </section>
   );
 };

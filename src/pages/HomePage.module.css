@@ -35,3 +35,9 @@ a.link:hover {
     font-size: 4rem;
   }
 }
+
+span {
+  color: #a54e4e;
+  text-transform: uppercase;
+  font-weight: 700;
+}
