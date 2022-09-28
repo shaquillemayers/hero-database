@@ -41,12 +41,11 @@ const HeroForm = () => {
 
         // fetch based on entered Hero name
         const response = await fetch(
-          `https://shielded-dusk-39150.herokuapp.com/https://superheroapi.com/api/10166146687505061/search/${enteredHeroName}`,
+          `https://shielded-dusk-39150.herokuapp.com/https://www.superheroapi.com/api/10166146687505061/search/${enteredHeroName}`,
           {
             method: "GET",
           }
         );
-
         // Handle unsuccessful response
         if (!response.ok) {
           setIsLoading(false);
