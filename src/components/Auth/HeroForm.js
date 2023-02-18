@@ -41,7 +41,7 @@ const HeroForm = () => {
 
         // fetch based on entered Hero name
         const response = await fetch(
-          `https://shielded-dusk-39150.herokuapp.com/https://www.superheroapi.com/api/10166146687505061/search/${enteredHeroName}`,
+          `https://corsproxy.io/?https://www.superheroapi.com/api/10166146687505061/search/${enteredHeroName}`,
           {
             method: "GET",
           }
@@ -104,9 +104,7 @@ const HeroForm = () => {
                       className={classes["hero-img"]}
                       src={`${hero.image.url}`}
                       alt={`${
-                        hero.biography["full-name"] !== ""
-                          ? hero.biography["full-name"]
-                          : hero.name
+                        hero.biography["full-name"] !== "" ? hero.biography["full-name"] : hero.name
                       }`}
                       onError={({ currentTarget }) => {
                         currentTarget.onerror = null; // prevents looping
@@ -116,10 +114,8 @@ const HeroForm = () => {
                     />
 
                     <div className={classes["hero-info"]}>
-                      <span>Real name: </span>{" "}
-                      <p> {hero.biography["full-name"]}</p>
-                      <span>Place of birth: </span>{" "}
-                      <p>{hero.biography["place-of-birth"]}</p>
+                      <span>Real name: </span> <p> {hero.biography["full-name"]}</p>
+                      <span>Place of birth: </span> <p>{hero.biography["place-of-birth"]}</p>
                       <span>Work: </span>
                       <p>{hero.work.occupation}</p>
                     </div>
@@ -157,9 +153,7 @@ const HeroForm = () => {
                                   r="35"
                                   strokeLinecap="round"
                                   strokeDashoffset={
-                                    value === "null"
-                                      ? 220
-                                      : Number(223 + 223 * (1 - value / 100)) // 223
+                                    value === "null" ? 220 : Number(223 + 223 * (1 - value / 100)) // 223
                                   }
                                 />
                               </svg>
