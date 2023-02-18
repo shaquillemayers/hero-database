@@ -8,7 +8,7 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   text-align: center;
-  color: white;
+  color: #f9f9f9;
 }
 
 .homepage h1 {
@@ -18,7 +18,7 @@
 
 .homepage p {
   width: 90%;
-  margin: 25px auto;
+  margin: 15px auto;
 }
 
 a.link {
@@ -27,8 +27,27 @@ a.link {
 }
 
 a.link:hover {
-  color: white;
+  color: #f9f9f9;
 }
+
+.white-button {
+  background: #ebbb11;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: bold;
+  color: #183153;
+  font-size: 16px;
+  color: #f9f9f9;
+}
+
+button:hover {
+  background: #ffd43b;
+  border-color: #f9f9f9;
+}
+
+/* normal: #ebbb11 hover: #ffd43b */
 
 @media screen and (max-width: 768px) {
   .homepage h1 {
