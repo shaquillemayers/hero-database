@@ -40,12 +40,7 @@ const HeroForm = () => {
         setIsLoading(true);
 
         // fetch based on entered Hero name
-        const response = await fetch(
-          `https://corsproxy.io/?https://www.superheroapi.com/api/10166146687505061/search/${enteredHeroName}`,
-          {
-            method: "GET",
-          }
-        );
+        const response = await fetch(`/.netlify/functions/getHero?heroName=${enteredHeroName}`);
         // Handle unsuccessful response
         if (!response.ok) {
           setIsLoading(false);
@@ -56,7 +51,6 @@ const HeroForm = () => {
         }
 
         const data = await response.json();
-        console.log(data);
 
         if (data.response === "success") {
           // asign results to Hero Data, if fetch is successful
@@ -103,9 +97,7 @@ const HeroForm = () => {
                     <img
                       className={classes["hero-img"]}
                       src={`${hero.image.url}`}
-                      alt={`${
-                        hero.biography["full-name"] !== "" ? hero.biography["full-name"] : hero.name
-                      }`}
+                      alt={`${hero.biography["full-name"] !== "" ? hero.biography["full-name"] : hero.name}`}
                       onError={({ currentTarget }) => {
                         currentTarget.onerror = null; // prevents looping
                         currentTarget.src = "no-superhero.png";
@@ -129,18 +121,11 @@ const HeroForm = () => {
                           <div className={classes.skill}>
                             <div className={classes.outer}>
                               <div className={classes.inner}>
-                                <div className={classes.number}>
-                                  {value === "null" ? "null" : value + "%"}
-                                </div>
+                                <div className={classes.number}>{value === "null" ? "null" : value + "%"}</div>
                               </div>
                             </div>
                             {value !== "null" && (
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                version="1.1"
-                                width="130px"
-                                height="130px"
-                              >
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="130px" height="130px">
                                 <defs>
                                   <linearGradient id="GradientColor">
                                     <stop offset="0%" stopColor="#e91e63" />
